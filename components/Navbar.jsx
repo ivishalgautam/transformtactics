@@ -1,20 +1,15 @@
 "use client";
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BsSearch } from "react-icons/bs";
-import { Menu, Transition } from "@headlessui/react";
 import { motion } from "framer-motion";
 
-import logo from "../public/assets/logo.png";
-import { useSelector } from "react-redux";
-import AutoCompleteBox from "./AutoCompleteBox";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
 const Navbar = () => {
   const pathname = usePathname();
-  const { products } = useSelector((store) => store.products);
   useEffect(() => {
     window.addEventListener("scroll", () => setInputVal(""));
   }, [typeof window !== "undefined" && window.scrollY]);
