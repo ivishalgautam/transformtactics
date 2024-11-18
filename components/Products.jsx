@@ -2,14 +2,10 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay } from "swiper";
-import heroImage from "../public/assets/hero-image.png";
-import { useSelector } from "react-redux";
-import Link from "next/link";
 import Image from "next/image";
 
 const Products = () => {
   SwiperCore.use([Autoplay]);
-  const { products } = useSelector((state) => state.products);
   return (
     <section className="bg-gradient-to-r from-[#001234] to-[#000123] w-full grid grid-cols-9 px-8 py-12 gap-4">
       <div className="col-span-9 lg:col-span-4 flex items-start justify-center flex-col">
@@ -25,8 +21,8 @@ const Products = () => {
           applications that improve operational efficiency and drive business
           growth. With a commitment to innovation and excellence, we deliver
           tailored solutions that enable businesses to streamline their
-          processes, make data-driven decisions, and stay competitive in today's
-          fast-paced environment.
+          processes, make data-driven decisions, and stay competitive in
+          today&apos;s fast-paced environment.
         </p>
         {/* <Link className="btn-secondary-product">View more</Link> */}
       </div>

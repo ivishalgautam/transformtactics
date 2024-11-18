@@ -21,41 +21,25 @@ export default function Home() {
   return (
     <>
       <div ref={container} className="bg-pink-light">
-        {/* <Hero />
-        <About />
-        <Products />
-        <Map />
-        <Quality />
-        <Industries />
-        <Blogs />
-        <Footer /> */}
-
         <FadeInWhenVisible>
           <Hero />
         </FadeInWhenVisible>
-
         <FadeInWhenVisible>
           <About />
         </FadeInWhenVisible>
-
         <FadeInWhenVisible>
           <Products />
         </FadeInWhenVisible>
-
         <FadeInWhenVisible>
           <Map />
         </FadeInWhenVisible>
-
         <FadeInWhenVisible>
           <Quality />
         </FadeInWhenVisible>
-
         <FadeInWhenVisible>
           <Industries />
         </FadeInWhenVisible>
-
         <FadeInWhenVisible>{/* <Blogs /> */}</FadeInWhenVisible>
-
         <FadeInWhenVisible>
           <Footer />
         </FadeInWhenVisible>
