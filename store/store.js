@@ -4,7 +4,6 @@ import modalSlice from "./features/modalSlice";
 
 export const store = configureStore({
   reducer: {
-    products: productsSlice,
     modal: modalSlice,
   },
 });
