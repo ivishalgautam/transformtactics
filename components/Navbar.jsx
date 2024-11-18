@@ -27,13 +27,6 @@ const Navbar = () => {
       type: "link",
     },
     {
-      id: 3,
-      name: "products",
-      path: "/products",
-      type: "dropdowns",
-      submenu: products,
-    },
-    {
       id: 4,
       name: "blogs",
       path: "/blogs",
@@ -50,9 +43,6 @@ const Navbar = () => {
   const [isNavOpened, setIsNavOpened] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
   const [inputVal, setInputVal] = useState("");
-  const filteredProducts = products.filter(
-    (product) => inputVal !== "" && product.title.includes(inputVal)
-  );
 
   const handleClick = (id) => {
     if (activeIndex === id) {

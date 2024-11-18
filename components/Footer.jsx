@@ -63,7 +63,6 @@ const services = [
 ];
 const Footer = () => {
   let navigate = useRouter();
-  const { products } = useSelector((store) => store.products);
 
   return (
     <footer className="bg-gradient-to-r from-[#001234] to-[#000123] w-full px-4 md:px-12">
