@@ -88,7 +88,7 @@ const Quality = () => {
       {data.map((item) => {
         return (
           <div
-            className={`grid grid-cols-6 gap-2 px-3 py-4 rounded-xl cursor-pointer relative before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-primary  before:rounded-2xl ${
+            className={`grid grid-cols-6 gap-2 px-3 py-4 rounded-xl cursor-pointer relative before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-primary before:rounded-2xl ${
               hoveredIndex === item.id
                 ? "before:scale-100 !text-white"
                 : "before:scale-0"

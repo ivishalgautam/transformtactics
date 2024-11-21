@@ -29,7 +29,23 @@ const About = () => {
               valuable time and resources while unlocking actionable insights.
             </p>
           </div>
-          <Link href="/about" className="btn-primary">
+
+          <div>
+            <h1 className="font-thin text-3xl capitalize">Our Story</h1>
+            <p className="my-4 text-sm">
+              We established in 2013 with a team of 2 members now we have a team
+              of 20+ experienced members who can use their knowledge and
+              expertise to serve their Experience in automation and constraints
+              finding.
+            </p>
+            <p className="my-4 text-sm">
+              Welcome to a world of limitless possibilities, where the journey
+              is as exhilarating as the destination, and where every moment is
+              an opportunity to make your mark on the canvas of existence. The
+              only limit is the extent of your imagination.
+            </p>
+          </div>
+          <Link href="#" className="btn-primary">
             Read more
           </Link>
         </motion.div>

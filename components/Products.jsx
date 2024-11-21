@@ -24,6 +24,7 @@ const Products = () => {
           processes, make data-driven decisions, and stay competitive in
           today&apos;s fast-paced environment.
         </p>
+
         {/* <Link className="btn-secondary-product">View more</Link> */}
       </div>
 

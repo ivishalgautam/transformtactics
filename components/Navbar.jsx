@@ -23,19 +23,22 @@ const Navbar = () => {
     {
       id: 2,
       name: "about",
-      path: "/about",
+      path: "#",
+      // path: "/about",
       type: "link",
     },
     {
       id: 4,
       name: "blogs",
-      path: "/blogs",
+      path: "#",
+      // path: "/blogs",
       type: "link",
     },
     {
       id: 6,
       name: "contact",
-      path: "/contact-us",
+      path: "#",
+      // path: "/contact-us",
       type: "link",
     },
   ];

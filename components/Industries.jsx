@@ -73,7 +73,7 @@ const Industries = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <section className="w-full">
+    <section className="w-full pb-10">
       <h2 className="font-thin text-primary text-3xl text-center my-8">
         Industries{" "}
         <span className="inline-block font-bold italic text-shadow">
