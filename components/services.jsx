@@ -40,8 +40,8 @@ export default function Services() {
             <Image
               alt={item.content}
               src={item.img}
-              width={200}
-              height={200}
+              width={500}
+              height={500}
               className="w-full h-full aspect-video object-cover object-center"
             />
             <div
