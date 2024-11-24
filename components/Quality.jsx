@@ -2,13 +2,13 @@
 import React, { useState } from "react";
 import { GiSandsOfTime, GiSpectacleLenses } from "react-icons/gi";
 import { BsBriefcase, BsDeviceSsd, BsHeadphones } from "react-icons/bs";
-import { BiSupport } from "react-icons/bi";
+import { MdOutlineDocumentScanner } from "react-icons/md";
 
 const data = [
   {
     id: 1,
-    title: "Ontime",
-    desc: "We ensure on-time delivery, providing reliable and punctual delivering services to meet customer deadlines and expectations.",
+    title: "Delivering Excellence with Smart Automation",
+    desc: "Our services are designed to optimize processes and elevate business efficiency using cutting-edge technology, ensuring seamless operations and measurable success.",
     icon: (
       <GiSandsOfTime
         size={50}
@@ -18,8 +18,8 @@ const data = [
   },
   {
     id: 2,
-    title: "Experience",
-    desc: "With years of experience in the adhesive tape manufacturing industry, we bring extensive knowledge, expertise, and a proven track record of delivering high-quality products.",
+    title: "Timely Execution",
+    desc: "We guarantee timely implementation and delivery of solutions, empowering businesses to meet deadlines and achieve objectives with precision.",
     icon: (
       <BsBriefcase
         size={50}
@@ -29,8 +29,8 @@ const data = [
   },
   {
     id: 3,
-    title: "Technical",
-    desc: "We hold a significant technical advantage in the tape industry, leveraging advanced technologies and innovative solutions for superior performance and reliability.",
+    title: "Expertise",
+    desc: "Backed by years of experience in automation and process optimization, we provide in-depth knowledge and proven methodologies for superior results.",
     icon: (
       <BsDeviceSsd
         size={50}
@@ -40,8 +40,8 @@ const data = [
   },
   {
     id: 4,
-    title: "Transparency",
-    desc: "We prioritize transparency, fostering open communication and providing customers with clear and accurate information throughout their engagement.",
+    title: "Technical Superiority",
+    desc: "We leverage advanced technologies to create reliable and efficient systems tailored to meet your specific needs, ensuring top-notch performance.",
     icon: (
       <GiSpectacleLenses
         size={50}
@@ -51,12 +51,22 @@ const data = [
   },
   {
     id: 5,
-    title: "End to end",
-    desc: "We provides comprehensive end-to-end support, guiding and assisting customers at every stage of their tape-related needs for a seamless experience.",
+    title: "Transparency",
+    desc: "We prioritize clear and open communication, providing accurate updates and fostering trust throughout the implementation process.",
+    icon: (
+      <MdOutlineDocumentScanner
+        size={50}
+        className="justify-start justify-self start !h-auto mt-1 relative z-10 text-primary"
+      />
+    ),
+  },
+  {
+    id: 6,
+    title: "End-to-End Solutions",
+    desc: "From consultation to implementation and beyond, we offer comprehensive support for all your automation and process improvement needs, ensuring a smooth journey.",
     icon: (
       <BsHeadphones
         size={50}
-        fill="#ffffff"
         className="justify-start justify-self start !h-auto mt-1 relative z-10 text-primary"
       />
     ),
@@ -64,27 +74,10 @@ const data = [
 ];
 
 const Quality = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(5);
+  const [hoveredIndex, setHoveredIndex] = useState(1);
 
   return (
     <section className="bg-white w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-8 px-4 md:px-12 py-12">
-      <div className="px-1 py-2 rounded-xl transition-all flex-box-col-start gap-y-4">
-        <h2 className="text-primary capitalize text-3xl font-thin">
-          doing{" "}
-          <span className="font-bold italic text-shadow capitalize inline-block">
-            best practices
-          </span>{" "}
-          <br />
-          for best quality
-        </h2>
-        <p className="text-lg">
-          Panamax implements best practices to ensure top-notch quality,
-          employing efficient processes, rigorous quality control, and
-          industry-leading standards for superior service and customer
-          satisfaction.
-        </p>
-      </div>
-
       {data.map((item) => {
         return (
           <div
@@ -94,7 +87,7 @@ const Quality = () => {
                 : "before:scale-0"
             }  before:transition-transform before:duration-500 before:ease-in-out overflow-hidden why-card`}
             onMouseEnter={() => setHoveredIndex(item.id)}
-            onMouseLeave={() => setHoveredIndex(5)}
+            onMouseLeave={() => setHoveredIndex(1)}
             key={item.id}
           >
             {item.icon}

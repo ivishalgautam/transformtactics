@@ -74,11 +74,11 @@ const Navbar = () => {
       initial={{ top: -100, opacity: 0 }}
       animate={{ top: 0, opacity: 1 }}
       // transition={{ ease }}
-      className="flex items-center justify-between bg-white px-2 sm:px-8 md:px-12 lg:px-18 relative shadow-md py-2"
+      className="flex items-center justify-between bg-white px-2 sm:px-8 md:px-12 lg:px-18 relative shadow-md"
     >
       {/* logo */}
-      <Link href="/">
-        <figure className="size-10">
+      <Link href="/" className="flex-grow-0">
+        <figure className="w-20 h-2w-20">
           <Image
             src={"/images/logo.png"}
             width={80}

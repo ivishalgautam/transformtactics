@@ -19,9 +19,7 @@ const About = () => {
           ref={ref}
           className="px-2 md:px-8 lg:px-10 col-span-12 md:col-span-7"
         >
-          <h1 className="text-2xl font-bold">
-            YOUR NEEDS, OUR SOLUTIONS. STRATEGIES PROPOSAL
-          </h1>
+          <h1 className="text-2xl font-bold">Your Needs, Our Solutions.</h1>
           <div className="my-6 text-sm">
             <p className="mt-4">
               We are excited to introduce how our automation and data analytics

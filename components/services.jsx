@@ -42,7 +42,7 @@ export default function Services() {
               src={item.img}
               width={500}
               height={500}
-              className="w-full h-full aspect-video object-cover object-center"
+              className="w-full h-full aspect-video object-contain object-center"
             />
             <div
               className={`absolute rounded-lg bg-black/80 transition-all duration-300 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center flex items-center justify-center w-0 h-0 opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:w-full group-hover:h-full`}

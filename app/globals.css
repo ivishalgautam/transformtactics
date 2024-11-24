@@ -119,7 +119,7 @@ video {
 
 .input {
   width: 100%;
-  border: solid 1.5px #f2f2f2;
+  border: solid 1.5px #999;
   border-radius: 0.5rem;
   background: none;
   padding: 0.7rem;
@@ -141,7 +141,7 @@ video {
 .input:focus,
 input:valid {
   outline: none;
-  border: 1.5px solid #e41d20;
+  border: 1.5px solid #099140;
 }
 
 .input:focus ~ label,
@@ -149,7 +149,7 @@ input:valid ~ label {
   transform: translateY(-50%);
   background-color: #fff;
   padding: 0 0.2em;
-  color: #e41d20;
+  color: #099140;
 }
 
 .body-scroll-stop {
@@ -191,7 +191,7 @@ input:valid ~ label {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: red !important;
+  background-color: #099140 !important;
 }
 
 .swiper-horizontal {

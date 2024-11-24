@@ -27,22 +27,25 @@ const Map = () => {
             Our Solutions Include:
           </h3>
           <ul className="pt-10 border-t-2 border-dashed border-gray-300 relative ul-list-tick grid grid-cols-2 gap-x-8">
-            <li> Sales Process FMS</li>
-            <li> Recruitment Process FMS</li>
-            <li> Breakdown Process</li>
-            <li> Performance Monitoring System</li>
-            <li> Appraisal Process</li>
-            <li> Help Ticket Process</li>
-            <li> Task Management & Delegation Process</li>
-            <li> Production Monitoring System</li>
-            <li> Purchase Monitoring System</li>
-            <li> Inventory Management System</li>
-            <li> Tool Age Monitoring</li>
-            <li> Preventive Maintenance System</li>
-            <li> Dashboards:</li>
-            <li> Management Visualization Dashboard</li>
-            <li> KRA & KPI Review Dashboard</li>
-            <li> Automated Email Reporting</li>
+            <li>Sales Process FMS</li>
+            <li>Recruitment Process FMS</li>
+            <li>Breakdown Process</li>
+            <li>Performance Monitoring System</li>
+            <li>Appraisal Process</li>
+            <li>Help Ticket Process</li>
+            <li>Task Management & Delegation Process</li>
+            <li>Production Monitoring System</li>
+            <li>Purchase Monitoring System</li>
+            <li>Inventory Management System</li>
+            <li>Tool Age Monitoring</li>
+            <li>Preventive Maintenance System</li>
+            <li>Digital Marketing Services</li>
+            <li>Management Visualization Dashboard</li>
+            <li>KRA & KPI Review Dashboard</li>
+            <li>Automated Email Reporting</li>
+            <li>SEO Services</li>
+            <li>Social Media Marketing Services</li>
+            <li>Meta Ads Services</li>
           </ul>
         </div>
       </div>

@@ -1,69 +1,42 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Autoplay } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import { Pagination } from "swiper";
-
 import banner1 from "../public/images/banner-1.jpg";
 import banner2 from "../public/images/banner-2.jpg";
-import Image from "next/image";
-import EnquiryForm from "./forms/enquiry";
+import { ImagesSlider } from "./image-slider";
+import { FlipWords } from "./flip-words";
 
 const Hero = () => {
-  SwiperCore.use([Autoplay]);
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-9 my-4 px-4 gap-4">
-      <motion.div
-        initial={{ x: -1000, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="col-span-1 lg:col-span-6 flex items-center justify-center"
+    <section className="h-[calc(100vh-100px)]">
+      <ImagesSlider
+        images={[banner1, banner2]}
+        overlayClassName={"bg-black/70"}
       >
-        <Swiper
-          modules={[Pagination]}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          slidesPerView={1}
-          pagination={{ clickable: true }}
-        >
-          <SwiperSlide>
-            <figure className="rounded-2xl w-full overflow-hidden h-[344px]">
-              <Image
-                src={banner1}
-                alt=""
-                className="object-cover object-center h-full w-full"
+        <div className="relative z-50 flex flex-col items-center justify-center gap-3">
+          <h1 className={"py-2 text-center text-lg text-white"}>
+            <span className="text-6xl font-extrabold">
+              89% of Businesses are <br />
+              <span className="decoration-[#099140] decoration-8 underline px-4 pb-2 rounded">
+                {" "}
+                Unorganised!
+              </span>
+            </span>
+            <div>
+              <br /> After helping Business Owners Scale Up their businesses,{" "}
+              <br /> I have decoded the major glitches that is keeping you
+              stuck!
+            </div>
+            <div className="text-4xl font-bold">
+              <FlipWords
+                words={[
+                  "Increase your Sales",
+                  "Build Funnels easily",
+                  "Automate & Track Business",
+                ]}
               />
-            </figure>
-          </SwiperSlide>
-          <SwiperSlide>
-            <figure className="rounded-2xl h-[344px] w-full overflow-hidden">
-              <Image
-                src={banner2}
-                alt=""
-                className="object-cover object-center h-full w-full"
-              />
-            </figure>
-          </SwiperSlide>
-        </Swiper>
-      </motion.div>
-
-      <motion.div
-        initial={{ x: 1000, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        className="col-span-1 lg:col-span-3 flex items-center justify-center flex-col bg-white rounded-lg px-4 py-3 gap-4 box-shadow-card"
-      >
-        <h2 className="text-2xl font-bold text-primary text-shadow">
-          Enquire Now
-        </h2>
-        <EnquiryForm isProductInput={false} />
-      </motion.div>
+            </div>
+          </h1>
+        </div>
+      </ImagesSlider>
     </section>
   );
 };

@@ -14,8 +14,10 @@
     "@next/third-parties": "^14.1.0",
     "@reduxjs/toolkit": "^1.9.5",
     "@vercel/speed-insights": "^1.0.3",
-    "framer-motion": "^10.12.11",
+    "clsx": "^2.1.1",
+    "framer-motion": "^10.18.0",
     "next": "^14.1.0",
+    "nodemailer": "^6.9.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.53.2",
@@ -23,7 +25,8 @@
     "react-redux": "^8.0.5",
     "react-share": "^4.4.1",
     "sonner": "^1.7.0",
-    "swiper": "^9.3.2"
+    "swiper": "^9.3.2",
+    "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {
     "autoprefixer": "^10",
