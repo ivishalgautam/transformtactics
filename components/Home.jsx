@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <>
       <div ref={container} className="bg-pink-light">
-        <InitialBanner />
+        {/* <InitialBanner /> */}
         <FadeInWhenVisible>
           <Hero />
         </FadeInWhenVisible>
